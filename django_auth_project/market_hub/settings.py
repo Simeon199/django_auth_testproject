@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'market_app',
-    'market_hub',
     'user_auth_app'
 ]
 
@@ -53,7 +52,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'django_auth_project.urls'
+ROOT_URLCONF = 'market_hub.urls' # django_auth_project
 
 TEMPLATES = [
     {
@@ -70,7 +69,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'django_auth_project.wsgi.application'
+WSGI_APPLICATION = 'market_hub.wsgi.application' # django_auth_project
 
 
 # Database
