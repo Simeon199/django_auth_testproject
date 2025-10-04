@@ -1,5 +1,5 @@
 from django.urls import path
-from ..views import ManufacturerList, ManufacturerDetail, ProductList, ProductDetail, ManufacturerUserList, ManufacturerUserDetail, ManufacturerProductListCreate
+from ..api.views import ManufacturerList, ManufacturerDetail, ProductList, ProductDetail, ManufacturerUserList, ManufacturerUserDetail, ManufacturerProductListCreate
 
 urlpatterns = [
     path('manufacturer/', ManufacturerList.as_view(), name='manufacturer-list'),
